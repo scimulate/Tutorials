@@ -33,7 +33,7 @@ reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
                        MODELE=model)
 
 reslin = CALC_CHAMP(reuse=reslin,
-                    CRITERES=('SIEQ_ELNO', 'SIEQ_ELGA', 'SIEQ_NOEU'),
+                    CRITERES=('SIEQ_NOEU'),
                     RESULTAT=reslin)
 
 IMPR_RESU(FORMAT='MED',
